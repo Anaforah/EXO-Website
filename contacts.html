@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/cssgeral.css">
+  <link rel="stylesheet" type="text/css" href="css/contacts.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script src="js/contacts.js"></script>
+  <title>EXO Team - Contacts</title>
+</head>
+<body>
+  <div class="cursor">
+    <div class="icon"></div>
+    <div class="link"></div>
+  </div>
+  <header> 
+    <div class="navPC">
+      <nav>
+        <a href="index.html"><img  src="Imagens/svg/EXO.svg" width="140" alt="EXO logo"></a>
+              <a class="navegacao" href="services.html" title="Services">Services</a>
+              <a class="navegacao" href="aboutus.html" title="About us">About us</a>
+              <a class="navegacao" href="contacts.html" title="Contacts">Contacts</a>
+      </nav>     
+       <select class="language" name="language">
+       <option>Language</option>
+      <option>English</option>
+      <option>Portuguese</option>
+    </select>
+    </div>
+
+    <div class="hamburguer">
+      <a href="index.html"><img  src="Imagens/svg/EXO.svg" width="140" alt="EXO logo"></a>
+      <div class="menuButton">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="nav2">
+        <ul>
+              <li><a class="navegacao" href="services.html" title="Services">Services</a></li>
+        <li><a class="navegacao" href="aboutus.html" title="About us">About us</a></li>
+          <li><a class="navegacao" href="contacts.html" title="Contacts">Contacts</a></li>
+            <li><select class="language" name="language">
+           <option>Language</option>
+          <option>English</option>
+          <option>Portuguese</option>
+        </select></li>
+        </ul>
+        </nav>     
+    </div>
+  </header>
+
+  <main>
+    <section class="first">
+      <div>
+        <h1 id="contactposition">Contact us</h1>
+      </div>
+      <div>
+        <h2 class="pos">Come work with us!</h2>
+        <h4 class="pos">See our job vacancies and apply </h4>
+        <form class="form">
+          <label for="search"></label>
+          <input id="search" type="search" name="search" placeholder="Search" required>
+          <button id="button" type="submit"><img src="Imagens/imagensindex/iconelupa.jpg" width="48" alt="land icon"></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="second">
+      <div>
+      <div class="title">
+      <h2>Other ways to<br>connect</h2>
+      <h4>We stand ready to assist you every<br>step of the way.</h4>
+        </div>
+      <div class="blococontactos">
+        <div>
+        <img src="Imagens/contactus/email.svg" alt="email icon" width="40">
+        <p>contact@exo-team.com</p>
+        </div>
+        <div>
+        <img src="Imagens/contactus/local.svg" alt="email icon" width="38">
+        <p>IPN Incubadora, Rua Pedro Nunes<br>
+          3030-199 Coimbra, Portugal</p>
+        </div>
+        <img id="imgcentro" src="Imagens/contactus/mapamundo.jpg" alt="World Map" width="514">
+      </div>
+      </div>
+
+
+        <form class="formulario">
+        <h4>Contact us</h4>
+          <div class="containerinline">
+          <div>
+          <label for="Name">Full Name</label>
+            <input id="Name" type="text" name="Name">
+          </div>
+            <div>
+              <label for="Topic">Topic</label>
+          <select id="Topic" name="topic">
+            <option value="job_application" selected>Job application</option>
+            <option value="Partnership">Partnership</option>
+            <option value="Service Request">Service Request</option>
+            <option value="Other">Other</option>
+          </select>
+            </div>
+          </div>
+          <label for="Email">Email</label>
+          <input id="Email" type="email" name="Email">
+
+          <label for="Phone">Phone Number</label>
+          <input id="Phone" type="number" name="Phone">
+
+          <label for="Message">Message</label>
+          <textarea id="Message" name="Message"></textarea>
+
+          <p><small>By Clicking "Submit", you agree to the Privacy Policy.</small></p>
+          <button class="Botao" type="submit">Submit</button>
+        </form>
+    </section>
+    </main>
+  
+  <footer>
+    <div>
+    <div class="content">
+      <div>
+        <p>contact@exo-team.com</p>
+        <p>IPN Incubadora, Rua Pedro Nunes<br>
+    3030-199 Coimbra, Portugal</p>
+        <a href="https://www.linkedin.com/company/exo-is/">
+        <img width=30 height=30 src="Imagens/imagensindex/linkdin.png" alt="Linkedin logo" ></a>
+        <a href="https://www.instagram.com/exoinnovationsustainability/">
+        <img width=30 height=30 src="Imagens/imagensindex/insta.png" alt="Instagram logo"></a>
+      </div>
+    </div>
+    </div>
+    <div class="content2">
+      <h4>Subscribe our Newsletter</h4>
+      <p>Join our subscribers list to get the lastest news</p>
+      <form action="data.php" method="POST">
+        <input type="email" id="emailField" name="email" placeholder="Enter your email" autocomplete="email">
+        <button type="submit"><img src="Imagens/imagensindex/botao.png" width="43" height="43" alt="Submit email"></button>
+      </form>
+    </div>
+    <div class="image">
+      <img width=106 height=55 src="Imagens/imagensindex/EXO.png" alt="EXO logo">
+    </div>
+  </footer>
+
+  <script src="js/geral.js"> </script>
+</body>
+</html>

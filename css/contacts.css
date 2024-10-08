@@ -1,0 +1,230 @@
+
+
+/*elementos flex*/
+.first, .second, .title, .blococontactos, .blococontactos div, .formulario, .containerinline{
+display: flex;
+}
+
+/*flex column*/
+.first, .title, .blococontactos, .formulario, .containerinline{
+flex-direction:column;
+}
+
+/*posiçao relativa*/
+.pos, .form, .form button, .formulario{
+position:relative;
+}
+
+/*border radius*/
+.form input, .blococontactos, .formulario{
+  border-radius:30px;
+}
+
+/*align items left*/
+.first, .blococontactos{
+text-align:left;
+}
+
+/*align items center*/
+.title, .second{
+align-items:center;
+}
+
+/*Margin left 15px*/
+.formulario h4, .formulario label, .blococontactos div p, formulario p{
+margin-left:15px;
+}
+
+/*padding 5px*/
+.formulario h4, .formulario label, .formulario input, select#Topic, textarea#Message{
+  padding:5px;
+}
+
+/*height 50px*/
+.form input, .form button{
+height:50px;
+}
+
+.first{
+  height:fit-content;
+  margin-bottom:150px;
+}
+
+.first div:first-child{
+  height:15%;
+  background-color:#00A19A;
+}
+
+.first #contactposition{
+  margin-left:50px;
+  color:white;
+}
+
+.pos, .form{
+  left:50px;
+  text-align:left;
+}
+
+.form input:focus{
+  border:1px solid #00A19A;
+}
+
+
+.form input{
+  width:50vw;
+  background: #FFF;
+  border-color:black;
+  padding-left:20px;
+  outline:none;
+  
+}
+
+.form button{
+  bottom:-20px;
+  width:50px;
+  border-style:none;
+  background:none;
+}
+
+.second{
+  justify-content: space-between;
+  margin:20px;
+}
+
+.second .title{
+  justify-content:center;
+  margin-left:5px;
+}
+
+.blococontactos{
+  width:40vw;
+  border:2px solid black;
+  z-index:5;
+}
+
+.blococontactos div{
+  flex-direction:row;
+  margin-left:15%;
+  padding-top:20px;
+}
+
+.blococontactos #imgcentro{
+ width:40vw;
+ z-index:-1;
+}
+
+.formulario{
+  margin-right: 50px;
+  background-color: white;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  width:50%;
+}
+
+.formulario p{
+  margin-top:0px;
+  font-size:1rem;
+  padding-left:20px;
+}
+
+.formulario label{
+  width:100%;
+  font-size:2rem;
+}
+.containerinline label#Topic{
+  position:absolute;
+  right:15px
+}
+
+.containerinline {
+  flex-direction:row;
+    gap: 10px;
+ }
+
+
+.formulario input, select#Topic, textarea#Message, select#Topic option{
+  appearance:none;
+  padding:5px;
+  height:40px;
+  border:none;
+  outline:none;
+  border-radius:10px;
+  background-color:#DEDEDE;
+  margin:15px;
+}
+
+.formulario input#Name, select#Topic{
+  width:20vw;
+}
+
+.formulario textarea#Message{
+  height:300px;
+}
+
+.blococontactos, #imgcentro, .formulario{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Botao{
+  margin-left:15px;
+}
+
+/*estilo do js*/
+
+.css {
+  display:inline-block;
+  background-color: #00A19A;
+  margin-left: 1%;
+  margin-top:5%;
+  padding:20px;
+  width:30vw;
+  color:white;
+  border-radius:30px;
+}
+.css p{
+  margin:0;
+}
+
+
+
+/*tablet*/
+@media (max-width: 906px) {
+.second{
+  display:block;
+}
+
+  .pos, .form{
+    left:20px;
+  }
+
+  .blococontactos{
+    width:60vw;
+    margin-bottom:100px;
+  }
+
+    .formulario{
+      width:70%;
+    }
+ 
+}
+
+
+/*phone*/
+@media (max-width: 576px) {
+  .formulario{
+    width:90%;
+  }
+  .formulario input#name{
+    width:80%;
+  }
+
+  .formulario input{
+    height:20px;
+  }
+
+  .css{
+    display:block;
+    width:80%;
+  }
+
+}
